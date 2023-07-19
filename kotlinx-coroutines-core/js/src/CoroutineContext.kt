@@ -33,6 +33,7 @@ private fun isJsdom() = jsTypeOf(navigator) != UNDEFINED &&
     jsTypeOf(navigator.userAgent.match) != UNDEFINED &&
     navigator.userAgent.match("\\bjsdom\\b")
 
+@PublishedApi
 internal actual val DefaultDelay: Delay
     get() = Dispatchers.Default as Delay
 
